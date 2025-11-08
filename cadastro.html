@@ -4,61 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG amor canino cadastre-se</title>
-    <link rel="shortcut icon" href="assets/imagem/icoo.png" type="image/png">
+    <link rel="shortcut icon" href="./assets/imagem/icoo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="cadastro-a">    
     <h1 class="gold">cadastre-se</h1>
     <h2 class="gold">junte-se a matilha, faça a diferença!</h2>
-        <form id="form-cadastro" action="#" method="post" novalidate>
-            <fieldset class="cadastro-b">
+        <form id="form-cadastro"  method="post">
+            <fieldset class="form-row">
+                <div class="form-group">    
                     <legend>Dados Pessoais</legend>
  
-                    <div class="grid"><label for="ncompleto">Nome completo:</label></div>
+                    <div class="form-group"><label for="ncompleto">Nome completo:</label></div>
                     <input id="ncompleto" name="ncompleto" type="text" required placeholder="Seu nome completo">
  
-                    <div class="grid"><label for="cpf">CPF:</label></div>
+                    <div class="form-group"><label for="cpf">CPF:</label></div>
                     <input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" placeholder="000.000.000-00" required>
- 
-                    <div class="grid"><label for="datadenascimento">Data de nascimento:</label></div>
+                   
+                    <div class="form-group"><label for="datadenascimento">Data de nascimento:</label></div>
                     <input id="datadenascimento" name="datadenascimento" type="date" required>
  
-                    <div class="grid"><label for="telefone">Telefone:</label></div>
-                    <input id="telefone" name="telefone" type="tel" inputmode="numeric" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(99) 99999-9999" required>
- 
-                    <div class="grid"><label for="email">E-mail:</label></div>
+                    <div class="form-group"><label for="telefone">Telefone:</label></div>
+                    <input id="telefone" name="telefone" type="tel" inputmode="numeric" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(00) 00000-0000" maxlength="15">
+        
+                    <div class="form-group"><label for="email">E-mail:</label></div>
                     <input id="email" name="email" type="email" placeholder="contato@exemplo.com" required autocomplete="email">
   
-                    <div class="grid"><label for="endereco">Endereço:</label><input id="endereco" name="endereco" type="text" placeholder="Rua, número, complemento" required>
+                    <div class="form-group"><label for="endereco">Endereço:</label><input id="endereco" name="endereco" type="text" placeholder="Rua, número, complemento" required>
  
-                    <div class="grid"><label for="cep">CEP:</label>
+                    <div class="form-group"><label for="cep">CEP:</label>
                     <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-\d{3}" maxlength="9" placeholder="00000-000" required>
  
-                    <div class="grid"><label for="cidade">Cidade:</label></div>
+                    <div class="form-group"><label for="cidade">Cidade:</label></div>
                     <input id="cidade" name="cidade" type="text" required>
 
-                    <div class="grid"><label for="name">Como quer ser chamado?</label></div>
+                    <div class="form-group"><label for="name">Como quer ser chamado?</label></div>
                     <input id= "name" type="text">
  
-                    <div class="grid"><label for="estado">Estado:</label></div>
-                    <select id="estado" name="estado" required></div>
-                    <option value="">Selecione</option>
+                    <div class="form-group"><label for="estado">Estado:</label></div>
+                    <select id="estado" name="estado" required>
                     <option value="DF">brasilia</option>
                     <option value="GO">goiania</option>
                     <option value="MT">mato grosso</option>
-                    <input type="submit" value="">
+                    </select>
                     <button type="submit">ENVIAR CADASTRO</button>
                     <input type="submit" value="" class="formulario">
                     <button type="submit" class="formulario-grid">LIMPAR FORMULARIO</button>
-                </select>
+                    
+            
+                <div id="mensagemSucesso">
+                    Cadastro realizado com sucesso! 
+                </div>
             </fieldset>
         </form>
-         <footer>
-         <img src="assets/imagem/images.voluntario.jpg" alt="imagem/jpg" class="image-cadastro
-         ">   
-        <p>
-            &copy; 2025 amor canino. feito com amor por cães 
-        </p>
-    </footer>
+        <footer>
+            <img src="assets/imagem/images.voluntario.jpg" alt="imagem/jpg" class="image-cadastro
+            ">   
+            <p>
+                &copy; 2025 amor canino. feito com amor por cães 
+            </p>
+        </footer>
+    <script src="/script.js"></script>
 </body>
 </html>

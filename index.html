@@ -13,19 +13,30 @@
     <header>
         <div>
             <img src="assets/imagem/loogo.png " alt="image/png" class="image"> <h1 class="titulo">ONG Amor Canino</h1>
-            <span id="burguer" class= "material-symbols-outlined">menu</span>
+            <span onclick="menuShow()" class= "material-symbols-outlined menu-icon">menu</span>
             <h2 class= "gold"><q> dia 26 de setembro</q> dia mundial dos doguinhos</h2>
             <img src="assets/imagem/imagem.inicio.jpeg" alt="image/jpeg">
             <h3 class= "gold">más cuidar é todos os dias!</h3>
-            <nav>
+            <nav class="mobile-menu">
                 <aside>
-                   <menu>
+                   <div>
                         <ul>
                             <a href="index.html">pagina inicial</a>
                              <a href="projeto.html">projetos</a>
                             <a href="cadastro.html">cadastre-se</a>
                         </ul>
-                   </menu> 
+                   </div> 
+                </aside>
+            </nav>
+            <nav class="menu-normal">
+                <aside>
+                   <div>
+                        <ul>
+                            <a href="index.html">pagina inicial</a>
+                             <a href="projeto.html">projetos</a>
+                            <a href="cadastro.html">cadastre-se</a>
+                        </ul>
+                   </div> 
                 </aside>
             </nav>
         </div>
@@ -62,5 +73,6 @@
         </p>
     </footer>
 </main>
+   <script src = "script.js"></script>
 </body>
 </html>

@@ -11,16 +11,25 @@
      <header>
          <div>
              <h1 class="titulo">Quem somos?</h1>
-             <span id="burguer" class="material-symbols-outlined">menu</span>
-             <nav>
-                <menu>
-                    <ul>
-                            <a href="index.html"> pagina inicial</a>
-                             <a href="projeto.html"> projetos sociais</a>
-                            <a href="cadastro.html"> cadastre-se</a>
-                    </ul>
-                </menu>
+             <span onclick="menuShow()" class="material-symbols-outlined menu-icon">menu</span>
+             <nav class="mobile-menu">
+                <ul>
+                    <a href="index.html"> pagina inicial</a>
+                    <a href="projeto.html"> projetos sociais</a>
+                    <a href="cadastro.html"> cadastre-se</a>
+                </ul>
              </nav>
+             <nav class="menu-normal">
+                <aside>
+                   <div>
+                        <ul>
+                            <a href="index.html">pagina inicial</a>
+                             <a href="projeto.html">projetos</a>
+                            <a href="cadastro.html">cadastre-se</a>
+                        </ul>
+                   </div> 
+                </aside>
+            </nav>
          </div>
      </header>
     <main>
@@ -81,5 +90,6 @@
             &copy;2025 amor canino. feito com amor por cães
         </p>
     </footer>
+    <script src = "script.js"></script>
 </body>
 </html>
