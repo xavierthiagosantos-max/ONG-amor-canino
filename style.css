@@ -245,6 +245,14 @@ button{
   font-size: 16px;
 
 }
+
+a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #ffd700;
+    outline-offset: 2px;
+    border-radius: 3px;
+    
+}
+
 img{
   
   max-width: 100%;
