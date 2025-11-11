@@ -10,6 +10,39 @@
     
 }
 
+body {
+    transition: background-color 0.5s, color 0.5s; 
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+body {
+   
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+body.dark-mode {
+   
+    background-color: #1a1a1a; 
+    color: #e0e0e0;
+
+}
+
+#mode-toggle {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #eed005;
+    color: white;
+    position: absolute;
+    top: 10 px;
+    left: 10px ;
+    
+}
+
 body{
     
     font-size: 100%;
@@ -259,7 +292,6 @@ span{
   cursor: pointer;
   border-radius: 2px;
   width: 30px;
-
 }
 
 nav.menu-icon{

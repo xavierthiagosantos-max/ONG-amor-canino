@@ -73,3 +73,36 @@ document.querySelector('DOMContentLoaded', function () {
         const menu = document.querySelector('.mobile-menu');
         menu.classList.toggle('active');
     }
+ const modeToggle = document.getElementById('mode-toggle');
+const body = document.body;
+const DARK_MODE_CLASS = 'dark-mode';
+
+
+function toggleMode() {
+    
+    body.classList.toggle(DARK_MODE_CLASS);
+
+    
+    if (body.classList.contains(DARK_MODE_CLASS)) {
+        
+        localStorage.setItem('mode', 'dark');
+        modeToggle.textContent = '☀️'; 
+    } else {
+        
+        localStorage.setItem('mode', 'light');
+        modeToggle.textContent =  '🌙'; 
+    }
+}
+
+
+modeToggle.addEventListener('click', toggleMode);
+const savedMode = localStorage.getItem('mode');
+
+if (savedMode === 'dark') {
+    
+    body.classList.add(DARK_MODE_CLASS);
+    modeToggle.textContent = '☀️';
+} else {
+    
+    modeToggle.textContent = '🌙';
+}
