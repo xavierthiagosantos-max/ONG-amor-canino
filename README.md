@@ -62,3 +62,11 @@ Para visualizar e testar o projeto localmente:
     
 3.  Execute:
     Abra o arquivo index.html em seu navegador de preferência.
+
+
+    AUTOR
+
+    ![IMG GIT](https://github.com/user-attachments/assets/07e0a6d7-712e-40bc-b625-0708fbc7382d)
+
+    THIAGO XAVIER DOS SANTOS 
+
